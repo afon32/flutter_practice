@@ -64,7 +64,8 @@ class SignUpController extends GetxController {
   void onTapSignIn(BuildContext context){
     addToDB();
     Utils.showGreenSnackBar('Регистрация прошла успешно!');
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const AuthPage()
-    ));
+    Navigator.pop(context);
+    // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const AuthPage()
+    // ));
   }
 }

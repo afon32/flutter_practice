@@ -61,7 +61,7 @@ class AuthController extends GetxController {
     }
   }
   void onTapSignUp(BuildContext context){
-    Navigator.pushReplacement(context,
+    Navigator.push(context,
     MaterialPageRoute(builder: (context) => const SignUpPage()
     ));
   }

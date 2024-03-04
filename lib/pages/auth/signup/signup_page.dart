@@ -185,11 +185,12 @@ class SignUpPage extends StatelessWidget {
                               const Text('Have account?'),
                               TextButton(
                                   onPressed: () {
-                                    Navigator.pushReplacement(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const AuthPage()));
+                                    Navigator.pop(context);
+                                    // Navigator.pushReplacement(
+                                    //     context,
+                                    //     MaterialPageRoute(
+                                    //         builder: (context) =>
+                                    //             const AuthPage()));
                                   },
                                   child: const Text('Sign in!'))
                             ],
